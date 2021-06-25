@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap");
+    </style>
+
+    <div class="top-bar">
+      <a href="">Zadanie 1</a>
+      <a href="">Zadanie 1</a>
+      <a href="">Zadanie 1</a>
+      <a href="">Zadanie 1</a>
+      <a href="">Zadanie 1</a>
+      <a href="">Zadanie 1</a>
+    </div>
+
+    <div class="task" id="task1">
+      <div class="task-description">
+        <h1>Zadanie 1</h1>
+        <p>
+          Dodaj dwa przyciski reagujące na klikniecie. Pierwszy niech wyświetla
+          dowolną informację na konsoli. Drugi natomiast niech wywołuje alert.
+        </p>
+      </div>
+
+      <div class="task-body" id="task1-body">
+        <div class="task1-buttons-wrapper">
+          <button id="task1_console_log_button">Console Log</button>
+          <button id="task1_alert_button">Alert</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task" id="task2">
+      <div class="task-body" id="task2-body">
+        <div class="task2-radio-buttons-wrapper">
+          <input type="radio" name="task2" id="pierwszy" /> Pierwszy
+          <input type="radio" name="task2" id="drugi" /> Drugi
+          <input type="radio" name="task2" id="trzeci" /> Trzeci
+        </div>
+
+        <div class="task2-paragraf-wrapper">
+          <p id="task2-text">Przykładowy tekst do zadania.</p>
+        </div>
+      </div>
+
+      <div class="task-description">
+        <h1>Zadanie 2</h1>
+        <p>
+          Stwórz paragraf z przykładową treścią. Dodaj trzy radio butony. W
+          zależności od ustawienia pierwszy radio buton sprawia, że tekst jest
+          jednolicie czarny. Drugi sprawia, że cały paragraf zmienia swój kolor
+          na losowy (z predefiniowanych pięciu) w odstępie 3 sekund. Trzeci
+          powoduje, że każda litera jest w losowym kolorze.
+        </p>
+      </div>
+    </div>
+
+    <div class="task" id="task3">
+      <div class="task-description">
+        <h1>Zadanie 3</h1>
+        <p>
+          Przygotuj trzy pola input. Następnie dodaj przycisk, który wywoła
+          funkcję łączącą ich wartości w jedno słowo. Odpowiedź ma być
+          wyświetlona w alercie (interpolacja, należy użyć onsubmit).
+        </p>
+      </div>
+
+      <div class="task-body" id="task3-body">
+        <form onsubmit="task3function()">
+          <input type="text" id="task3input1" />
+          <input type="text" id="task3input2" />
+          <input type="text" id="task3input3" />
+          <input type="submit" id="task3-submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="task" id="task4">
+      <div class="task-body" id="task4-body">
+        <div class="task4-button-wrapper">
+          <button id="start-tracking-button">Rozpocznij śledzenie</button>
+          <button id="stop-tracking-button">Zakończ śledzenie</button>
+        </div>
+
+        <span id="coords"> Coords: </span>
+      </div>
+
+      <div class="task-description">
+        <h1>Zadanie 4</h1>
+        <p>
+          Dodaj dwa przyciski. Pierwszy rozpocznie śledzenie kursora – pozycja
+          będzie wyświetlana na bieżąco w np. elemencie span. Drugi przycisk
+          zatrzyma śledzenie.
+        </p>
+      </div>
+    </div>
+
+    <div class="task" id="task5">
+      <div class="task-description">
+        <h1>Zadanie 5</h1>
+        <p>
+          Dodaj element video zawierający filmik z YouTube o tematyce związanej
+          z CDV.
+        </p>
+      </div>
+
+      <div class="task-body" id="task5-body">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HjrzWg5XC5Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="task" id="task6">
+      <div class="task-body" id="task6-body">
+        <svg>
+          <circle cx="50" cy="50" r="25" />
+        </svg>
+        <svg>
+          <ellipse cx="50" cy="50" rx="25" ry="20" />
+        </svg>
+        <svg>
+          <rect x="0" y="0" width="50" height="25" rx="10" ry="10" />
+        </svg>
+        <svg>
+          <rect x="0" y="0" width="50" height="25" rx="0" ry="10" />
+        </svg>
+        <svg>
+          <rect x="0" y="0" width="50" height="50" rx="0" ry="10" />
+        </svg>
+      </div>
+
+      <div class="task-description">
+        <h1>Zadanie 6</h1>
+        <p>
+          Dodaj następujące elementy SVG: koło, prostokąt, zaokrąglony kwadrat,
+          dwa własne kształty.
+        </p>
+      </div>
+    </div>
+
+    <div class="task" id="task9">
+      <div class="task-description">
+        <h1>Zadanie 9</h1>
+        <p>
+          Dodaj pole input, w którym wpisywany będzie promień koła. W polu tym
+          powinno być możliwe jedynie wpisanie wartości numerycznych dodatnich,
+          gdzie maksymalna wartość to 100. Wpisanie błędnych wartości wyświetli
+          błąd. Dodaj przycisk, który po kliknięciu (na podstawie wpisanej
+          wartości) wyświetli koło o zadanym promieniu.
+        </p>
+      </div>
+
+      <div class="task-body" id="task9-body">
+      </div>
+    </div>
+
+    <div class="task" id="task25">
+      <div class="task-description">
+        <h1>Zadanie 25</h1>
+        <p>
+          Napisz symulator dodawania pisemnego. Proszę zaprezentować obliczenia
+          tak jakby były wykonywane na kartce. Dwie liczby powinny być podawane
+          przez użytkownika.
+        </p>
+      </div>
+
+      <div class="task-body" id="task25-body">
+        <div class="task25-inputs-wrapper">
+          <div class="first-input-wrapper">
+            <p>Wprowadź pierwszą liczbę.</p>
+            <input type="number" name="" id="task25-first-number-input" />
+          </div>
+
+          <div class="second-input-wrapper">
+            <p>Wprowadź drugą liczbę.</p>
+            <input type="number" name="" id="task25-second-number-input" />
+          </div>
+          <button id="task25-addition-button">Dodaj!</button>
+        </div>
+        <div class="task25-addition-wrapper">
+          <p id="task25-first-number"></p>
+          <p id="task25-second-number"></p>
+          <p id="task25-result-line"></p>
+          <p id="task25-result"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="task" id="task16">
+      <div class="task-body" id="task16-body">
+        <div class="task16-input-buttons-wrapper">
+          <p>Wprowadź liczbę!</p>
+          <input type="number" name="" id="task16-number-input" />
+          <button id="task16-add-button">Dodaj</button>
+          <button id="task16-sum-button">Suma</button>
+          <button id="task16-avg-button">Średnia</button>
+        </div>
+
+        <div class="task16-numbers-wrapper">
+          <ul id="task16-numbers-list"></ul>
+          <p id="task16-result"></p>
+        </div>
+      </div>
+
+      <div class="task-description">
+        <h1>Zadanie 16</h1>
+        <p>
+          Dodaj pole input i trzy przyciski „dodaj”, „suma” i „średnia”.
+          Kliknięcie w przycisk powinno dodawać wartość wpisaną w polu input do
+          listy (wyświetlanej obok przycisku). Przycisk „suma” powinien wywołać
+          funkcję sumującą dodane wartości. Przycisk „średnia” natomiast
+          powinien uruchomić funkcję liczącą średnią z podanych wartości.
+        </p>
+      </div>
+    </div>
+
+    <div class="task" id="task20">
+      <div class="task-description">
+        <h1>Zadanie 20</h1>
+        <p>
+          Napisz symulator gry w Lotto (podstawowe zasady). Użytkownik powinien
+          móc podać 6 liczb, następnie przeprowadzane jest losowanie.
+          Wyświetlone zostają wylosowane liczby oraz podawany jest wynik (ile
+          liczb się zgadza). Te liczby, które pokrywają się z podanymi przez
+          użytkownika mają mieć kolor czerwony.
+        </p>
+      </div>
+
+      <div class="task-body" id="task20-body">
+        <input type="text" id="task20-input" />
+        <button id="task20-button">Lotto!</button>
+        <p id="task20-result"></p>
+      </div>
+    </div>
+
+    <div class="task" id="task17">
+      <div class="task-body" id="task17-body">
+        <div class="task17-inputs-and-buttons-wrapper">
+          <textarea name="" cols="30" rows="10" id="task17-textarea"></textarea>
+          <div class="task17-functions-wrapper">
+            <div class="task17-function" id="task17-first-function">1</div>
+            <div class="task17-function" id="task17-second-function">2</div>
+            <div class="task17-function" id="task17-third-function">3</div>
+            <div class="task17-function" id="task17-fourth-function">4</div>
+            <div class="task17-function" id="task17-fifth-function">5</div>
+            <div class="task17-function" id="task17-sixth-function">6</div>
+            <div class="task17-function" id="task17-seventh-function">7</div>
+            <div class="task17-function" id="task17-eighth-function">8</div>
+            <div class="task17-function" id="task17-nineth-function">9</div>
+          </div>
+        </div>
+
+        <div class="task17-modal-wrapper">
+          <div class="task17-result-wrapper">
+            <p id="task17-result"></p>
+          </div>
+          <div class="task17-close-modal-wrapper">
+            <h1 id="task17-close-modal">&#xd7;</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-description">
+        <h1>Zadanie 17</h1>
+        <p>
+          Napisz konwerter tekstu – dodaj pole pozwalające na pisanie
+          kilkulinijkowego tekstu. Następnie dodaj przyciski odpalające
+          konkretne funkcje.
+        </p>
+      </div>
+    </div>
+
+    <script src="./scripts/task1script.js" defer></script>
+    <script src="./scripts/task2script.js" defer></script>
+    <script src="./scripts/task3script.js" defer></script>
+    <script src="./scripts/task4script.js" defer></script>
+    <script src="./scripts/task7script.js" defer></script>
+    <script src="./scripts/task9script.js" defer></script>
+    <script src="./scripts/task16script.js" defer></script>
+    <script src="./scripts/task17script.js" defer></script>
+    <script src="./scripts/task20script.js" defer></script>
+    <script src="./scripts/task25script.js" defer></script>
+  </body>
+</html>
