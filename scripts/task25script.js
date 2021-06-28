@@ -5,8 +5,27 @@ const resultLine = document.getElementById("task25-result-line");
 const firstInput = document.getElementById("task25-first-number-input")
 const secondInput = document.getElementById("task25-second-number-input")
 const additionButton = document.getElementById("task25-addition-button")
+const task25Info = document.getElementById("task25-info")
 
-additionButton.addEventListener('click', () => addition(+firstInput.value, +secondInput.value))
+additionButton.addEventListener('click', () => {
+  if (isEmpty(firstInput) || isEmpty(secondInput)){
+    task25Info.textContent = 'Żadne pole nie może być puste!'
+    return
+  }
+
+  if ((firstInput.value % 1 != 0) || (secondInput.value % 1 != 0) ){
+    task25Info.textContent = 'Wprowadź liczby całkowite!'
+    return
+  }
+
+
+  if ((firstInput.value < 0) || (secondInput.value < 0) ){
+    task25Info.textContent = 'Wprowadź liczby dodatnie!'
+    return
+  }
+
+  addition(+firstInput.value, +secondInput.value)
+})
 
 const addition = (a, b) => {
 
