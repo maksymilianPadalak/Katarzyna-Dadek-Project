@@ -4,10 +4,17 @@ const task16SumButton = document.getElementById("task16-sum-button");
 const task16AvgButton = document.getElementById("task16-avg-button");
 const task16NumbersList = document.getElementById("task16-numbers-list");
 const task16Result = document.getElementById("task16-result")
+const task16Info = document.getElementById("task16-info")
 
 const task16NumbersArray = [];
 
 task16AddButton.addEventListener("click", () => {
+
+  if (isEmpty(task16Input)){
+    task16Info.textContent = 'Pole nie może być puste!'
+    return
+  }
+
   const inputNumber = +task16Input.value;
   task16NumbersArray.push(inputNumber);
   let li = document.createElement("li");

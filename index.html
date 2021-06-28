@@ -75,9 +75,9 @@
 
       <div class="task-body" id="task3-body">
         <form onsubmit="task3function()">
-          <input type="text" id="task3input1" maxlength="20"/>
-          <input type="text" id="task3input2" maxlength="20"/>
-          <input type="text" id="task3input3" maxlength="20"/>
+          <input type="text" id="task3input1" maxlength="20" />
+          <input type="text" id="task3input2" maxlength="20" />
+          <input type="text" id="task3input3" maxlength="20" />
           <input type="submit" id="task3-submit" />
         </form>
       </div>
@@ -169,46 +169,12 @@
 
       <div class="task-body" id="task9-body">
         <div class="task9-input-wrapper">
-          <input type="number" id="task9-input">
+          <input type="number" id="task9-input" />
           <button id="task9-button">Narysuj koło!</button>
           <p id="task9-info">Wprowadź promień!</p>
         </div>
         <canvas id="circle" width="300" height="300"></canvas>
       </div>
-    </div>
-
-    <div class="task" id="task25">
-      <div class="task-body" id="task25-body">
-        <div class="task25-inputs-wrapper">
-          <div class="first-input-wrapper">
-            <p>Wprowadź pierwszą liczbę.</p>
-            <input type="number" name="" id="task25-first-number-input" />
-          </div>
-
-          <div class="second-input-wrapper">
-            <p>Wprowadź drugą liczbę.</p>
-            <input type="number" name="" id="task25-second-number-input" />
-          </div>
-          <button id="task25-addition-button">Dodaj!</button>
-          <p id="task25-info"></p>
-        </div>
-        <div class="task25-addition-wrapper">
-          <p id="task25-first-number"></p>
-          <p id="task25-second-number"></p>
-          <p id="task25-result-line"></p>
-          <p id="task25-result"></p>
-        </div>
-      </div>
-
-      <div class="task-description">
-        <h1>Zadanie 25</h1>
-        <p>
-          Napisz symulator dodawania pisemnego. Proszę zaprezentować obliczenia
-          tak jakby były wykonywane na kartce. Dwie liczby powinny być podawane
-          przez użytkownika.
-        </p>
-      </div>
-
     </div>
 
     <div class="task" id="task16">
@@ -219,6 +185,7 @@
           <button id="task16-add-button">Dodaj</button>
           <button id="task16-sum-button">Suma</button>
           <button id="task16-avg-button">Średnia</button>
+          <p id="task16-info"></p>
         </div>
 
         <div class="task16-numbers-wrapper">
@@ -239,26 +206,16 @@
       </div>
     </div>
 
-    <div class="task" id="task20">
+    <div class="task" id="task17">
       <div class="task-description">
-        <h1>Zadanie 20</h1>
+        <h1>Zadanie 17</h1>
         <p>
-          Napisz symulator gry w Lotto (podstawowe zasady). Użytkownik powinien
-          móc podać 6 liczb, następnie przeprowadzane jest losowanie.
-          Wyświetlone zostają wylosowane liczby oraz podawany jest wynik (ile
-          liczb się zgadza). Te liczby, które pokrywają się z podanymi przez
-          użytkownika mają mieć kolor czerwony.
+          Napisz konwerter tekstu – dodaj pole pozwalające na pisanie
+          kilkulinijkowego tekstu. Następnie dodaj przyciski odpalające
+          konkretne funkcje.
         </p>
       </div>
 
-      <div class="task-body" id="task20-body">
-        <input type="text" id="task20-input" />
-        <button id="task20-button">Lotto!</button>
-        <p id="task20-result"></p>
-      </div>
-    </div>
-
-    <div class="task" id="task17">
       <div class="task-body" id="task17-body">
         <div class="task17-inputs-and-buttons-wrapper">
           <textarea name="" cols="30" rows="10" id="task17-textarea"></textarea>
@@ -284,14 +241,72 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="task" id="task20">
+      <div class="task-body" id="task20-body">
+        <div class="task20-inputs-wrapper">
+          <input type="number" id="task20-input" />
+          <input type="number" id="task20-input" />
+          <input type="number" id="task20-input" />
+          <input type="number" id="task20-input" />
+          <input type="number" id="task20-input" />
+          <input type="number" id="task20-input" />
+        </div>
+
+        <button id="task20-button">Lotto!</button>
+        <p id="task20-result"></p>
+        <div class="task20-winnng-numbers">
+          <p id="task20-winning-number"></p>
+          <p id="task20-winning-number"></p>
+          <p id="task20-winning-number"></p>
+          <p id="task20-winning-number"></p>
+          <p id="task20-winning-number"></p>
+          <p id="task20-winning-number"></p>
+        </div>
+      </div>
       <div class="task-description">
-        <h1>Zadanie 17</h1>
+        <h1>Zadanie 20</h1>
         <p>
-          Napisz konwerter tekstu – dodaj pole pozwalające na pisanie
-          kilkulinijkowego tekstu. Następnie dodaj przyciski odpalające
-          konkretne funkcje.
+          Napisz symulator gry w Lotto (podstawowe zasady). Użytkownik powinien
+          móc podać 6 liczb, następnie przeprowadzane jest losowanie.
+          Wyświetlone zostają wylosowane liczby oraz podawany jest wynik (ile
+          liczb się zgadza). Te liczby, które pokrywają się z podanymi przez
+          użytkownika mają mieć kolor czerwony.
         </p>
+      </div>
+    </div>
+
+    <div class="task" id="task25">
+      <div class="task-description">
+        <h1>Zadanie 25</h1>
+        <p>
+          Napisz symulator dodawania pisemnego. Proszę zaprezentować obliczenia
+          tak jakby były wykonywane na kartce. Dwie liczby powinny być podawane
+          przez użytkownika.
+        </p>
+      </div>
+
+      <div class="task-body" id="task25-body">
+        <div class="task25-inputs-wrapper">
+          <div class="first-input-wrapper">
+            <p>Wprowadź pierwszą liczbę.</p>
+            <input type="number" name="" id="task25-first-number-input" />
+          </div>
+
+          <div class="second-input-wrapper">
+            <p>Wprowadź drugą liczbę.</p>
+            <input type="number" name="" id="task25-second-number-input" />
+          </div>
+          <button id="task25-addition-button">Dodaj!</button>
+          <p id="task25-info"></p>
+        </div>
+        <div class="task25-addition-wrapper">
+          <p id="task25-first-number"></p>
+          <p id="task25-second-number"></p>
+          <p id="task25-result-line"></p>
+          <p id="task25-result"></p>
+        </div>
       </div>
     </div>
 

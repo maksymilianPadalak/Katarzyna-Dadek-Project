@@ -247,10 +247,15 @@ button:hover {
   align-content: center;
 }
 
-.task25-addition-wrapper {
-  flex-direction: column;
-  margin-left: 40px;
-  font-size: 25px;
+.task20-winnng-numbers{
+  display: flex;
+  flex-direction: row;
+}
+
+.task20-winnng-numbers p{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 #task20-body {
@@ -259,8 +264,15 @@ button:hover {
 
 #task20-body input{
   margin-bottom: 20px;
-  width: 200px;
+  width: 30px;
 }
+
+.task25-addition-wrapper {
+  flex-direction: column;
+  margin-left: 40px;
+  font-size: 25px;
+}
+
 
 #task25-body p {
   margin-top: 2px;
