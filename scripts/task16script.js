@@ -24,9 +24,17 @@ task16AddButton.addEventListener("click", () => {
 });
 
 task16SumButton.addEventListener("click", () => {
+  if (isEmpty(task16Input)){
+    task16Info.textContent = 'Pole nie może być puste!'
+    return
+  }
   task16Result.textContent = `Suma tych liczb jest równa ${task16NumbersArray.reduce((a, b) => a+b, 0)}`
 })
 
 task16AvgButton.addEventListener("click", () => {
+  if (isEmpty(task16Input)){
+    task16Info.textContent = 'Pole nie może być puste!'
+    return
+  }
   task16Result.textContent = `Średnia tych liczb jest równa ${task16NumbersArray.reduce((a, b) => a+b, 0)/task16NumbersArray.length}`
 })
