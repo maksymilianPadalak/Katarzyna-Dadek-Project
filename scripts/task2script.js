@@ -25,6 +25,7 @@ pierwszy.addEventListener("change", () => {
 
 drugi.addEventListener("change", () => {
   task2Letters.innerHTML = textInnerHtml;
+  clearInterval(colorChangeInterval);
   changeColor();
   globalThis.colorChangeInterval = setInterval(changeColor, 3000);
 });

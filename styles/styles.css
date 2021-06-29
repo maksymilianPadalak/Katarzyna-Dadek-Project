@@ -99,6 +99,10 @@ button:hover {
   color: grey;
 }
 
+#task3-body{
+  flex-direction: column;
+}
+
 #task3-body form {
   display: flex;
   flex-direction: column;
@@ -129,6 +133,7 @@ button:hover {
 
 #task6-body svg{
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 
